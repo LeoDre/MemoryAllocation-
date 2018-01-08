@@ -1,0 +1,12 @@
+CS214
+Assignment1: Memory Allocation++
+Group Member: 	Ran_Sa 		RUID:165009668   Section:04
+              	Chengguizi_Han  RUID:159002412   Section:04
+
+This test cases file describe the two workloads (Workload E and F) and why we include them in our test cases.
+
+Workload E: Randomly choose between memory allocation and memory free. For the memory allocation part, randomly choose malloc() a pointer with a size among an int, a char, and a double. All pointers are freed eventually. Repeat this 1000 times.
+
+Workload F: Randomly choose an integer ranged from 1 to 10, allocate a memory with the integer times the size of an int. All pointers are freed eventually. Repeat this 1000 times. 
+
+Reasons: We included these workloads in order to simulate the real memory allocation process, in which users usually request a memory with different types, like ‘long’, ‘char[]’, or pointer, that have different size of memory, and those different types with different amounts. We used type ‘int’ instead of type ‘char’ that may be used to simulate the memory allocation of a string (char[]), because the size of char is 1 byte, and it does not vary that much with workload D.
