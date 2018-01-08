@@ -48,7 +48,21 @@ Different workload costs of time measured by function gettimeofday().(in microse
  149366 | 33876 | 30888 | 14168 | 14281 | 21408 
  103849 | /     | /     | /     | /     | /     
 
-|    name    | age |
-| ---------- | --- |
-| LearnShare |  1222 |
-| Mike       |  32 |
+##  Findings
+The time that allocation needs to take varies overtime, and some of them stay in a
+more steady range while others vary a lot. This may be caused by the randomness of
+the memory size that is being allocated and freed. The workload A is most timeconsuming
+on iLab machines which surprises us, we suppose that the cost of time
+varies on different machines. We found that it is also impossible for workload A to
+hold all of the 1000 allocation, because the size of metadata is too large compared to
+the size of memory allocation that is being requested.
+Apart from workload A, the time costs of workloads B and C are larger than those
+of workloads D, E, and F in general. When the program allocates larger memory
+blocks in general, less metadata blocks are needed to store the information of the
+memory blocks, so the time of traversing through the metadata linked list will
+decrease. The reason for workload A being most time-consuming may be the same—it
+needs to traverse through the metadata structs with the least step taking each time.
+The gap among the costs of time may will become more obvious when the size of
+main memory increases (the size of myblock array).
+##  Contributions
+**Team Members**: Ran Sa, Chengguizi Han
