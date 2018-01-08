@@ -37,7 +37,7 @@ data of the metadata ahead of the input pointer. Error D is detected by checking
 whether there is any available metadata block, which is both free and large enough to
 hold the requested data size.
 ##  Workload data
-Different workload costs of time measured by function gettimeofday().(in microseconds)  
+Different workload costs of time measured by function gettimeofday().(in microseconds)  
 | A | B | C | D | E | F |  
 | -------- | -------- | -------- | -------- | -------- | -------- |  
 | 139983 | 35276 | 37724 | 29264 | 8984 | 34202 |  
