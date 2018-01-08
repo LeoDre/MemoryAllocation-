@@ -39,7 +39,7 @@ hold the requested data size.
 ##  Workload data
 Different workload costs of time measured by function gettimeofday().(in microseconds)  
 | A | B | C | D | E | F |
-| :------: | :------: | :------: | :------: | :------: | :------: |
+| :-: | :-: | :-: | :-: | :-: | :-: |
 | 139983 | 35276 | 37724 | 29264 | 8984 | 34202 |
 | 127544 | 37075 | 26532 | 29099 | 8929 | 36473 |
 | 67910 | 34080 | 35183 | 18551 | 11133 | 18927 |
